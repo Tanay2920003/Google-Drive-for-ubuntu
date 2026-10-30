@@ -206,16 +206,13 @@ function setupKeyboardShortcuts() {
 // 7. Terminal Installation Tabs Switcher
 const installTabsData = {
   oneclick: {
-    title: 'bash - install.sh (Automated)',
+    title: 'bash - Fast Install (Curl / Automated)',
     content: `
-      <div class="terminal-comment"># 1. Clone the repository</div>
-      <code>git clone https://github.com/developertan/GDRIVSYNC.git</code><br>
-      <code>cd GDRIVSYNC</code><br><br>
-      <div class="terminal-comment"># 2. Run the automated installer (installs icons, launcher, and autostart)</div>
-      <code>chmod +x install.sh run.sh</code><br>
-      <code>./install.sh</code><br><br>
-      <div class="terminal-comment"># 3. Launch from GNOME Activities or terminal:</div>
-      <code>./run.sh</code>
+      <div class="terminal-comment"># ⚡ Fast Install: Single curl command</div>
+      <code>curl -fsSL https://raw.githubusercontent.com/Tanay2920003/Google-Drive-for-ubuntu/main/install.sh | bash</code><br><br>
+      <div class="terminal-comment"># Or install via Git:</div>
+      <code>git clone https://github.com/Tanay2920003/Google-Drive-for-ubuntu.git</code><br>
+      <code>cd Google-Drive-for-ubuntu && ./install.sh</code>
     `
   },
   manual: {

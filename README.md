@@ -92,20 +92,26 @@ sudo apt update
 sudo apt install -y python3-gi python3-gi-cairo gir1.2-gtk-4.0 gir1.2-adw-1 fuse3 curl unzip
 ```
 
-### One-Click Install
-Clone the repository and run the automated installer:
+### ⚡ One-Command Install (Curl)
+Open your terminal and paste:
 ```bash
-git clone https://github.com/developertan/GDRIVSYNC.git
-cd GDRIVSYNC
+curl -fsSL https://raw.githubusercontent.com/Tanay2920003/Google-Drive-for-ubuntu/main/install.sh | bash
+```
+
+### Or Install via Git
+```bash
+git clone https://github.com/Tanay2920003/Google-Drive-for-ubuntu.git
+cd Google-Drive-for-ubuntu
 chmod +x install.sh run.sh
 ./install.sh
 ```
 
-The installer will:
-1. Verify and bundle the high-performance cloud engine.
+The installer will automatically:
+1. Verify and configure the high-performance cloud engine.
 2. Download the official Google Drive vector logo from the internet and generate anti-aliased square PNGs for all system resolutions (`16x16` to `512x512`).
-3. Install `google-drive.desktop` into `~/.local/share/applications/` and configure silent boot autostart.
-4. Refresh the GNOME icon cache and desktop search index.
+3. Install `google-drive.desktop` into `~/.local/share/applications/` and configure background autostart.
+4. Add the `google-drive` CLI command to `~/.local/bin/`.
+5. Refresh the GNOME icon cache and desktop search index.
 
 ---
 
